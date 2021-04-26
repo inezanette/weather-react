@@ -11,6 +11,12 @@ function App() {
         <Weather />
        
       </header>
+      <footer>
+        This project was coded by inezanette and is {""}
+        <a href="https://github.com/inezanette/weather-react"
+        target="_blank"
+        >Open sourced on GitHub</a>
+      </footer>
     </div>
   );
 }

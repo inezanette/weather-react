@@ -62,6 +62,13 @@ export default function Weather() {
         className="alice"
       />
       <hr />
+      <footer><small>
+        This project was coded by inezanette and is {""}
+        <a href="https://github.com/inezanette/weather-react"
+        target="_blank"
+        >Open sourced on GitHub</a>
+        </small>
+      </footer>
     </div>
   );
 }
