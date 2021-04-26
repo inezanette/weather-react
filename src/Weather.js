@@ -49,10 +49,10 @@ export default function Weather() {
           <li>{weatherData.description}</li>
           <li></li>
           <li>
-            {weatherData.humidity}% <span> </span>%
+            {weatherData.humidity}% <span> </span>
           </li>
           <li>
-            {weatherData.wind}km/h<span> </span> km/h
+            {weatherData.wind}km/h<span> </span>
           </li>
         </ul>
       </div>
