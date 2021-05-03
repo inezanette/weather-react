@@ -1,87 +1,57 @@
-body {
+body{
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  }
-  .Weather .search-form {
-    display: block;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  
-  h1 {
-    text-align: center;
-    font-family: "alfa slab one", cursive;
+}
+.Weather{
+    border: 1px solid #dadde1;
+    color: rgb(135,135,135);
+    padding: 16px;
+    margin: 30px auto;
+    max-width:600px;
+    border-radius: 4px;
+}
+
+
+.Weather h1{
+    color: #878787;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
     font-weight: 100;
-    font-size: 64px;
-    color: white;
-    padding: 10px 0;
-    margin-bottom: 0;
-  }
-  
-  .Weather .condition {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .Weather .data {
-    text-align: center;
-    font-size: 64px;
-    font-weight: 10px;
-    height: 22;
-    color: white;
-    font-family: "alfa slab one", cursive;
-  }
-  
-  .Weather .active {
-    cursor: default;
-    text-decoration: none;
-  }
-  
-  .Weather .active:hover {
-    text-decoration: none;
-  }
-  
-  ul {
+    line-height: 29px;
+    margin:20px 0 0 0;
+}
+
+.Weather ul{
     margin: 0;
     padding: 0;
-  }
-  
-  li {
-    font-size: 16px;
-    line-height: 1.2;
+}
+
+.Weather li{
+    font-size:16px;
+    font-weight:100;
+    line-height:19.2px;
     list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: "alfa slab one", cursive;
-  }
-  
-  .Weather .units {
-    font-size: 16px;
+}
+
+.Weather img{
+    height: 64px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.Weather .temperature{
+    font-weight: bold;
+    color: rgb(33,33,33);
+    font-size:64px;
     font-weight: 400;
-    line-height: 1;
+    line-height:64px;
+}
+
+.Weather .unit{
+    color: rgb(33,33,33);
+    font-size:16px;
+    font-weight: 400;
     position: relative;
-    top: -32px;
-  }
-  
-  .Weather .alice {
-    display: block;
-    margin: 0 auto;
-    width: 300px;
-  }
-  
-  .Weather .row {
-    text-align: center;
-    font-family: "alfa slab one", cursive;
-    color: white;
-    font-size: 20px;
-  }
-  
-  .Weather {
-    border: 1px solid;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 800px;
-  }
-  
+    line-height: 1;
+    top:-34px;
+    margin-left: 5px;
+}
