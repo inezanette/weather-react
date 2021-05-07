@@ -4,7 +4,7 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props){
-        const [weatherData, setWeatherData]= useState({ ready: false });
+        const [weatherData, setWeatherData]= useState({ ready: false});
         const [ city, setCity]= useState(props.defaultCity);
         function handleResponse(response){
             setWeatherData({
@@ -13,7 +13,7 @@ export default function Weather(props){
                 humidity: response.data.main.humidity,
                 date:new Date(response.data.dt * 1000),
                 description:response.data.weather[0].description,
-                iconUrl:"https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+                iconUrl:`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
                 wind:response.data.wind.speed,
                 city:response.data.name,
 
@@ -36,9 +36,9 @@ export default function Weather(props){
     }
 
     if (weatherData.ready){
-            return(
+        return(
             <div className="Weather">
-            <form onSubmit={handleSubmit}>
+             <form onSubmit={handleSubmit}>
                 <div className="row">
                 <div className="col-9">
                 <input type="Search" placeholder="Enter a City..." className="form-control" autoFocus="on" onChange={handleCityChange}/>
@@ -47,7 +47,7 @@ export default function Weather(props){
                 <input type="submit" value="Search" className="btn-btn-primary w-100"/>
                 </div>
             </div>
-        </form>
+            </form>
         <WeatherInfo data={weatherData} />
         </div>
     );
