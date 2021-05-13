@@ -22,8 +22,8 @@ if (loaded) {
                 <div className="col" key={index}> 
                 <WeatherForecastDay data={dailyForecast} />
                </div>
-               );
-            }
+              );
+             }
            })}
            </div>
        </div>
@@ -32,7 +32,7 @@ if (loaded) {
         let apiKey = "85bac114d52449ee9cc4314d6d2a3f87";
         let longitude= props.coordinates.lon;
         let latitude= props.coordinates.lat;
-        let apiUrl= `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+        let apiUrl= `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
     
         axios.get(apiUrl).then(handleResponse);
     
