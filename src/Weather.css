@@ -55,3 +55,10 @@ body{
     top:-34px;
     margin-left: 5px;
 }
+.Weather .btn-btn-primary{
+    background-color: #29d2e4;
+    border: 1px ;
+    border-radius: 8px;
+    padding: 8px;
+    color:White;
+}
